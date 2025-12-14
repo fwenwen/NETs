@@ -24,7 +24,6 @@ cols <- c(`Fibroblasts` ="#7570B3" ,
           `Endothelial cells` ="#7B4173",
           `Unciliated epithelial cells` ="#74C476",
           `Ciliated epithelial cells` = "#E7B800",
-          # `Paneth cells` = "#ff9896",
           `Macrophages`="#b10318",
           `Neutrophils`="#FD8D3C",
           `Monocytes`="#FB9A99",
@@ -40,7 +39,6 @@ table(seuratObj$celltype)
 seuratObj$celltype <- factor(seuratObj$celltype,levels = names(cols))
 DimPlot(seuratObj,group.by = "celltype",cols = cols,raster = F)+NoAxes()+ggtitle("")
 
-# 定义分面背景
 ridiculous_strips <- strip_themed(
   text_x = elem_list_text(colour=c("#26A9E0","#B07AA1","#F6921E"),
                           face=c("bold","bold","bold"),size=c(10,10,10)),
