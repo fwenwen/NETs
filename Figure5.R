@@ -15,11 +15,9 @@ Cols <- c(`Unciliated epithelial cells` = "#A3BFDB",
           `Endothelial cells` = "#C99C86",
           `Cycling cells`="#8DD3C7",
           `Dendritic cells` = "#F2E2C9",Macrophages = "#F781B8" , 
-          # Monocytes = "#B9E1D3",
           Neutrophils = "#CDCDCD" , 
-          # `Mast cells` = "#B3DE69",
           `NK cells` = "#FA9193",`T cells` =  "#FEC1DF", 
-          `B cells` = "#FFED6F" ) #, `Plasma cells` = "#C093FA" 
+          `B cells` = "#FFED6F" ) 
 
 DimPlot(seuratObj,group.by = "celltype",cols = Cols)
 
